@@ -1,46 +1,49 @@
-<!DOCTYPE html>
-<html >
+#myImage{
+    width: 200px;
+    height: 200px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(350deg);
+}
 
-<head>
-    <title>
-        Okean Rose - Resume
-    </title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="title">
-        <h1>Okean Rose</h1>
-        <hr>
-        <p>Cell: 555-666-7777</p>
-        <p>Email:<a href=""> greatoldone@lovecraft.com</a></p>    
 
-        <div class="descriptiveParagraph">
-            I am an outgoing and energetic (ask anybody) young professional,
-            seeking a carear that fits my professional skills, personality and 
-            murderous tendencies.My squid-like head is a masterful problem solver
-            and inspires fear in who gaze upon it. I can bring word domination to your organization.
+.imageArea{
+    float: right;
+    position: absolute;
+    top: 40px;
+    right: 200px; 
 
-        </div>
-        
-        <div class="imageArea">
-            <img src="ORose.jpg" alt="" id="myImage">
-        </div>
+}
 
-        
-        
-        <div class="resumeBody">
-            <div class="detailHeading">
-                Education
-            </div>
-            <div class="verticalLine"></div>
-            <div class="details">
-                <h3>University of the West Indies - Mona</h3> 
-                <p><b>Major:</b>Computer Science</p>
-                <p><b>Minor:</b>Accounts</p>
-            </div>
-            </div>
-            
-        </div>
-    </div>
-</body>
-</html>
+.descriptiveParagraph{
+    position: relative;
+    left: 0;
+    width: 70%;
+}
+
+body{
+    width: 70%;
+    margin: auto;
+}
+
+.resumeBody{
+    margin-top: 20px;
+}
+
+.verticalLine{
+    border-left: solid black;
+    border-width: .3px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.detailHeading{
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+
+.details{
+    float: left;
+}
